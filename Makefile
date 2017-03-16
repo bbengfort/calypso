@@ -2,7 +2,7 @@
 SHELL := /bin/bash
 
 # Set important Paths
-PROJECT := yellowbrick
+PROJECT := calypso
 LOCALPATH := $(CURDIR)/$(PROJECT)
 PYTHONPATH := $(LOCALPATH)/
 PYTHON_BIN := $(VIRTUAL_ENV)/bin

@@ -1,7 +1,12 @@
 ## Package Dependencies
 loremipsum==1.0.5
 
-## Python/Virtual Env Installed
+## Development Utilities
+#python-dateutil==2.6.0
+#nose==1.3.7
+#coverage==4.3.4
+
+## Python/Virtual Env Installed (Ignore)
 #appdirs==1.4.3
 #packaging==16.8
 #pip==9.0.1

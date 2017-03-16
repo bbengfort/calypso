@@ -31,7 +31,7 @@ except ImportError:
 
 # Read the __init__.py file for version info
 version = None
-versfile = os.path.join(os.path.dirname(__file__), "pleiades", "__init__.py")
+versfile = os.path.join(os.path.dirname(__file__), "calypso", "__init__.py")
 with open(versfile, 'r') as versf:
     exec(versf.read(), namespace)
     version = namespace['get_version']()
@@ -78,7 +78,11 @@ config = {
     "classifiers": classifiers,
     "keywords": keywords,
     "zip_safe": True,
-    "scripts": ['calypso.py'],
+    "entry_points": {
+        "console_scripts": [
+            "calypso = calypso.app:main",
+        ],
+    },
 }
 
 ##########################################################################
